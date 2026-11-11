@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#050B16" android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center_horizontal"
+        android:padding="22dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="J.A.R.V.I.S" android:textColor="#55D9FF"
+            android:textSize="30sp" android:textStyle="bold" android:letterSpacing="0.18"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="PERSONAL AI ASSISTANT" android:textColor="#7896AD"
+            android:textSize="11sp" android:letterSpacing="0.18" android:layout_marginTop="4dp"/>
+        <TextView android:id="@+id/reactor" android:layout_width="190dp" android:layout_height="190dp"
+            android:layout_marginTop="34dp" android:gravity="center"
+            android:text="◉" android:textColor="#38CFFF" android:textSize="112sp"
+            android:background="@drawable/reactor_bg"/>
+        <TextView android:id="@+id/status" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:text="READY • Tap microphone and speak"
+            android:textColor="#9CC9DF" android:textSize="14sp" android:layout_marginTop="24dp"/>
+        <TextView android:id="@+id/answer" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:minHeight="90dp"
+            android:gravity="center" android:text="Hello Sir. I am JARVIS."
+            android:textColor="#E5F7FF" android:textSize="17sp"
+            android:padding="16dp" android:layout_marginTop="12dp"/>
+        <Button android:id="@+id/micButton" android:layout_width="match_parent"
+            android:layout_height="56dp" android:text="🎙  TALK TO JARVIS"
+            android:textAllCaps="false" android:textSize="16sp" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/apiKey" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Gemini API key (optional)"
+            android:inputType="textPassword" android:textColor="#FFFFFF"
+            android:textColorHint="#7896AD" android:singleLine="true"
+            android:padding="14dp" android:layout_marginTop="22dp"
+            android:backgroundTint="#2789B5"/>
+        <Button android:id="@+id/saveKey" android:layout_width="match_parent"
+            android:layout_height="48dp" android:text="Save AI key"
+            android:textAllCaps="false"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Offline: basic phone commands. Online: Gemini AI (internet + API key required)."
+            android:textColor="#7896AD" android:textSize="12sp"
+            android:gravity="center" android:layout_marginTop="18dp"/>
+    </LinearLayout>
+</ScrollView>
